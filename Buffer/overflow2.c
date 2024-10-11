@@ -2,9 +2,12 @@
 
 int main()
 {
+    int j = 0;
     char a[6] = "Hello";
-    char b[6] = "wor\0ld";
-    char c[5];
+    char b[5] = "wor\0";
+    char c[10] = "sb";
+    
+
 
 
 
@@ -13,13 +16,13 @@ int main()
     printf(" A : %s @ %p\n", a, a);
     printf(" B : %s @ %p\n", b, b);
     printf(" C : %s @ %p\n", c, c);
+    printf(" J : %d @ %p\n", j, &j);
 
-    if (c)
+    if (j)
     {
-        printf("Access Granted");
+        printf("Access Granted\n");
     }
     else{
-        printf("Access Denied");
+        printf("Access Denied\n");
     }
-    
 }
